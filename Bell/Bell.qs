@@ -19,7 +19,7 @@
 			using (qubits = Qubit[1]) {
 				for (test in 1..count) {
 					Set (initial, qubits[0]);
-
+					H(qubits[0]);
 					let res = M (qubits[0]);
 
 					//count the number of ones we saw:
